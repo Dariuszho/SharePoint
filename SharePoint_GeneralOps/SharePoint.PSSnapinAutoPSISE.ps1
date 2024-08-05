@@ -21,7 +21,7 @@ else {
 # From notification take the directory and name of profile
 
 # Example Start-Process notepad \Users\%username%\Documents\WindowsPowerShell\Microsoft.PowerShellISE_profile.ps1
-Start-Process notepad <path>\<profile_name> 
+Start-Process notepad \<path>\<profile_name> 
 
 # Add folowing line and save 
 Add-PSSnapin Microsoft.SharePoint.PowerShell -ErrorAction SilentlyContinue
