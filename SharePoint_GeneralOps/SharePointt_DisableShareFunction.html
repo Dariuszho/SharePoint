@@ -1,0 +1,55 @@
+//For librery in English Display Language
+
+// disable share functionlity in SharePoint Online/SHarePoint On-Prem Clasic 
+
+<style>
+.js-listview-qcbShareButton,
+.ms-calloutLink[title="Share file or folder with other person or group"],
+.ms-contextmenu-link[title="Shared With"],
+.ms-contextmenu-link[title="Share"],
+#Ribbon\.Library\.Settings\.LibraryPermissions-Large,
+#Ribbon\.Library\.Settings\.LibraryPermissions-Medium,
+#Ribbon\.Library\.Settings\.LibraryPermissions-Small,
+#Ribbon\.Documents\.Manage\.ManagePermissions-Medium,
+#Ribbon\.Documents\.Share\.ShareItem-Large{
+ pointer-events:none;
+    opacity:0.6;
+}
+</style>
+
+// Disable Shared With menu item from SharePoint List
+
+<style>
+.ms-core-menu-link[title="Shared With"] {
+	pointer-events: none;
+	opacity: 0.6;
+}
+</style>
+
+
+//For librery in Hebrew Display Language 
+
+// disable share functionlity in SharePoint Online/SHarePoint On-Prem Clasic 
+
+<style>
+.js-listview-qcbShareButton,
+.ms-calloutLink[title="שתף קובץ או תיקיה עם אדם אחר או קבוצה אחרת"],
+.ms-contextmenu-link[title="Shared With"],
+.ms-contextmenu-link[title="Share"],
+#Ribbon\.Library\.Settings\.LibraryPermissions-Large,
+#Ribbon\.Library\.Settings\.LibraryPermissions-Medium,
+#Ribbon\.Library\.Settings\.LibraryPermissions-Small,
+#Ribbon\.Documents\.Manage\.ManagePermissions-Medium,
+#Ribbon\.Documents\.Share\.ShareItem-Large{
+ pointer-events:none;
+    opacity:0.6;
+}
+</style>
+
+// Hide Shared With menu item from SharePoint List
+
+<style>
+.ms-core-menu-link[title="שתף"] {
+	display: none;
+}
+</style>
