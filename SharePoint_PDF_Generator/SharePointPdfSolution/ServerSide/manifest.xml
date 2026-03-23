@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution SolutionId="a1b2c3d4-e5f6-7890-abcd-ef1234567890" 
+          xmlns="http://schemas.microsoft.com/sharepoint/"
+          SharePointProductVersion="15.0">
+  
+  <FeatureManifests>
+    <FeatureManifest Location="PdfHandlerFeature\Feature.xml" />
+  </FeatureManifests>
+  
+  <Assemblies>
+    <Assembly Location="SharePointPdfHandler.dll" DeploymentTarget="WebApplication" />
+    <Assembly Location="itextsharp.dll" DeploymentTarget="WebApplication" />
+    <Assembly Location="BouncyCastle.Crypto.dll" DeploymentTarget="WebApplication" />
+  </Assemblies>
+  
+  <TemplateFiles>
+    <TemplateFile Location="LAYOUTS\SharePointPdfSolution\PdfGenerator.ashx" />
+  </TemplateFiles>
+  
+</Solution>

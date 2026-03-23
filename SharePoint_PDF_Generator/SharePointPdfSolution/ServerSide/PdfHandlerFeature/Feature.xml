@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="b2c3d4e5-f6a7-8901-bcde-f23456789012"
+         Title="SharePoint PDF Solution - Server Handler"
+         Description="Provides server-side PDF generation with RTL/Hebrew support using iTextSharp"
+         Version="1.0.0.0"
+         Scope="Farm"
+         Hidden="FALSE"
+         DefaultResourceFile="core"
+         xmlns="http://schemas.microsoft.com/sharepoint/">
+</Feature>
