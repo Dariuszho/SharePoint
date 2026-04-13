@@ -1,0 +1,91 @@
+<!--
+    =====================================================
+    MULTI-BUTTON TEMPLATE FOR SHAREPOINT 2016 SCRIPT EDITOR
+    =====================================================
+    
+    HOW TO ADD A NEW BUTTON:
+    1. Copy one of the <button> lines below
+    2. Change the onclick function name (e.g., openLink5)
+    3. Change the button text
+    4. Add a matching function in the <script> section
+    
+    HOW TO REMOVE A BUTTON:
+    Simply delete the entire <button> line you don't need
+    
+    HOW TO CHANGE COLORS:
+    Edit the .mainButton style below:
+    - background-color: button background
+    - color: text color
+    - hover section: colors when mouse hovers
+    =====================================================
+-->
+
+<style>
+    .mainButton {
+        background-color: #2f5bd6;
+        /* Button background color */
+        border: none;
+        color: white;
+        /* Button text color */
+        padding: 5px 32px;
+        border-radius: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+        margin: 4px 2px;
+        /* Space between buttons */
+        cursor: pointer;
+    }
+
+    .mainButton:hover {
+        background-color: rgb(160, 158, 158);
+        /* Hover background */
+        color: #000000;
+        /* Hover text color */
+    }
+</style>
+
+<!-- =====================================================
+     BUTTONS SECTION - Add, remove, or edit buttons here
+     ===================================================== -->
+
+<button class="mainButton" onclick="openLink1(); return false;">ButtonName1</button>
+<button class="mainButton" onclick="openLink2(); return false;">ButtonName2</button>
+<button class="mainButton" onclick="openLink3(); return false;">ButtonName3</button>
+<button class="mainButton" onclick="openLink4(); return false;">ButtonName4</button>
+
+<!-- To add more buttons, copy a line above and change the function name and text -->
+
+<script type="text/javascript">
+    // =====================================================
+    // LINKS SECTION - Edit URLs here to match your buttons
+    // =====================================================
+
+    // Button 1 - ButtonName1
+    function openLink1() {
+        window.open('http://yoursite/yourapp1.aspx', '_blank');
+        return false;
+    }
+
+    // Button 2 - ButtonName2
+    function openLink2() {
+        window.open('http://yoursite/yourapp2.aspx', '_blank');
+        return false;
+    }
+
+    // Button 3 - ButtonName3
+    function openLink3() {
+        window.open('http://yoursite/yourapp3.aspx', '_blank');
+        return false;
+    }
+
+    // Button 4 - ButtonName4
+    function openLink4() {
+        window.open('http://yoursite/yourapp3.aspx', '_blank');
+        return false;
+    }
+
+    // To add more functions, copy one of the functions above,
+    // rename it (e.g., openLink5), and change the URL
+</script>

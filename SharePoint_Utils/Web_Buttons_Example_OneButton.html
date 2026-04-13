@@ -1,0 +1,29 @@
+<style>
+    .mainButton {
+        background-color: #2f5bd6;
+        border: none;
+        color: white;
+        padding: 5px 32px;
+        border-radius: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    .mainButton:hover {
+        background-color: rgb(160, 158, 158);
+        color: #000000;
+    }
+</style>
+
+<button class="mainButton" onclick="openProtocol(); return false;">Button Name</button>
+
+<script type="text/javascript">
+    function openProtocol() {
+        window.open('http://yoursite/yourapp.aspx', '_blank');
+        return false;
+    }
+</script>
